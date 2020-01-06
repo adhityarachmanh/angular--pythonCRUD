@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+
+    <script src="bower_components/jquery/dist/jquery.slim.min.js"></script>
+    <script src="bower_components/popper.js/dist/umd/popper.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+   
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/file-saver/dist/FileSaver.min.js"></script>
+    <script src="assets/js/export-excel.js"></script>
+    <base href="/">
+</head>
+
+<body>
+    <app-navbar></app-navbar>
+    <div ng-view></div>
+
+</body>
+<script src="_ngscript/app.js"></script>
+<script src="_ngscript/routes.js"></script>
+
+<!--Services-->
+<script src="_ngscript/services/products-service.js"></script>
+<script src="_ngscript/services/categories-service.js"></script>
+<script src="_ngscript/services/users-service.js"></script>
+<!--Directive-->
+<script src="_ngscript/directives/navbar-directive.js"></script>
+
+<!--Controllers-->
+<script src="_ngscript/controllers/home-controller.js"></script>
+<script src="_ngscript/controllers/products/add-controller.js"></script>
+<script src="_ngscript/controllers/auth/signin-controller.js"></script>
+
+</html>
